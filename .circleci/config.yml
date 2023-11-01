@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/node:14.10.1
+    resource_class: small
     steps:
       - checkout
       - restore_cache:
